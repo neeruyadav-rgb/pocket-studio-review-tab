@@ -15,7 +15,6 @@ html,body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 .cv5-lbl{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;color:#52525b}
 .cv5-lbl.prp{color:#7c3aed}
 .cv5-phone{border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.06)}
-/* Current panel */
 .cv5-phone.cur5{background:#111113;border:1px solid #27272a;border-radius:20px;padding:20px 16px 28px;height:auto;overflow:visible}
 .c6-header{margin-bottom:18px}
 .c6-intro{font-size:12px;color:#71717a;margin-bottom:8px}
@@ -39,7 +38,6 @@ html,body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 .c6-text{font-size:12px;color:#a1a1aa;line-height:1.55}
 .c6-text-purple{color:#c4b5fd!important}
 .c6-orig{font-size:12px;color:#52525b;font-style:italic;line-height:1.55}
-/* Proposed panel */
 .cv5-phone.prp6{border-radius:20px;overflow:visible;height:auto;position:relative}
 .p6-bg{position:absolute;inset:0;background:#0d0e0b;border-radius:20px;overflow:hidden;z-index:0}
 .p6-bg::after{content:'';position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&q=60');background-size:cover;background-position:center;opacity:.12}
@@ -51,18 +49,17 @@ html,body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 .p6-str-card{background:rgba(22,40,12,.88);border:1px solid rgba(60,90,30,.45)}
 .p6-dark-card{background:rgba(24,24,22,.88);border:1px solid rgba(255,255,255,.07)}
 .p6-str-head,.p6-dark-head{display:flex;justify-content:space-between;align-items:center;padding:10px 14px}
-.p6-str-title,.p6-card-title{color:#fff!important;font-size:13px;font-weight:500;line-height:1.3}
+.p6-str-title,.p6-card-title{color:#ffffff!important;font-size:13px;font-weight:500;line-height:1.3}
 .p6-chev{color:rgba(255,255,255,.45)!important;font-size:16px;flex-shrink:0;transition:transform .2s;line-height:1}
 .p6-str-card .p6-str-body,.p6-dark-card .p6-dark-body{display:none;padding:0 14px 12px}
 .p6-str-card.open .p6-str-body,.p6-dark-card.open .p6-dark-body{display:block}
 .p6-str-card.open .p6-chev,.p6-dark-card.open .p6-chev{transform:rotate(180deg)}
 .p6-str-body{color:rgba(200,230,160,.8)!important;font-size:12px!important;line-height:1.55!important}
 .p6-card-text{color:rgba(220,215,200,.8)!important;font-size:12px;line-height:1.55;margin-bottom:12px}
-.p6-actions{display:flex;align-items:center;gap:8px}
+.p6-actions{display:flex;align-items:center;gap:8px;margin-top:10px}
 .p6-btn-accept,.p6-btn-discuss{padding:6px 14px;border-radius:20px;font-size:12px;font-weight:500;cursor:pointer;font-family:Inter,sans-serif;border:1px solid rgba(255,255,255,.16);color:rgba(235,230,215,.88);background:rgba(255,255,255,.08)}
 .p6-icon-btns{display:flex;gap:6px;margin-left:auto}
 .p6-icon-btn{width:28px;height:28px;border-radius:50%;background:transparent;border:1px solid rgba(255,255,255,.14);color:rgba(200,195,180,.65);font-size:11px;cursor:pointer;display:flex;align-items:center;justify-content:center}
-/* Prompt section */
 .prompt-outer{max-width:1200px;margin:0 auto;padding:0 40px 80px}
 .prompt-outer hr{border:none;border-top:1px solid #27272a;margin-bottom:40px}
 .prompt-outer h2{font-size:26px;font-weight:700;color:#fafafa;letter-spacing:-.02em;margin-bottom:6px}
@@ -81,14 +78,10 @@ html,body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;backgr
   <h2 class="cv5-h2">Old vs New</h2>
   <p class="cv5-sub">Both panels are fully interactive — click any card to expand it.</p>
   <div class="cv5-grid">
-    <!-- CURRENT -->
     <div>
       <div class="cv5-lbl cur">Current</div>
       <div class="cv5-phone cur5">
-        <div class="c6-header">
-          <div class="c6-intro">The analysis is in. Brace for useful information:</div>
-          <div class="c6-stats"><span>9 STRENGTHS</span><span class="c6-sep">|</span><span>3 QUICK TIPS</span><span class="c6-sep">|</span><span>4 REWRITES</span></div>
-        </div>
+        <div class="c6-header"><div class="c6-intro">The analysis is in. Brace for useful information:</div><div class="c6-stats"><span>9 STRENGTHS</span><span class="c6-sep">|</span><span>3 QUICK TIPS</span><span class="c6-sep">|</span><span>4 REWRITES</span></div></div>
         <div class="c6-sec-row"><span class="c6-sec-icon">👍</span><span class="c6-sec-name">Strength</span></div>
         <div class="c6-str-card" onclick="this.classList.toggle('open')"><div class="c6-card-head"><div class="c6-str-title">Opening Hook</div><span class="c6-chev">⌄</span></div><div class="c6-str-why">The sensory details of the vibration and the 'thick grey soup' of the rain immediately ground the listener in Kaelen's physical discomfort. By framing the mine as a cage and revealing that Kaelen's own heartbeat has begun to sync with a subterranean entity, you create an irresistible mystery that demands further explanation.</div></div>
         <div class="c6-str-card" onclick="this.classList.toggle('open')"><div class="c6-card-head"><div class="c6-str-title">Cliffhanger</div><span class="c6-chev">⌄</span></div><div class="c6-str-why">The shift from the physical chaos of the well to Silas Vane's chillingly calm observation creates a powerful sense of dread. By framing Kaelen not as a survivor of an accident but as a deliberate sacrifice for an altar Vane has spent years building, you've transformed a disaster into a calculated trap.</div></div>
@@ -110,7 +103,6 @@ html,body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <div class="c6-rw-card" onclick="this.classList.toggle('open')"><div class="c6-card-head"><div class="c6-card-title">Cross-Chapter Repetition</div><span class="c6-chev">⌄</span></div><div class="c6-body"><div class="c6-label">WHAT TO IMPROVE</div><div class="c6-text">The scene at the well is functionally repeated later in the chapter, leading to redundant character beats.</div><div class="c6-label">SUGGESTED CHANGE</div><div class="c6-text">Condense the well scene into a brief transition or internal reflection.</div><div class="c6-label c6-label-purple">SUGGESTED REWRITE</div><div class="c6-text c6-text-purple">The encounter at the well still burned in Kaelen's mind — Elara's mask slipping, Silas Vane's cold promise of a 'hole' in the mines. He had tried to wash the dark away, but the water had only made the blue light under his skin pulse brighter.</div></div></div>
       </div>
     </div>
-    <!-- PROPOSED -->
     <div>
       <div class="cv5-lbl prp">Proposed</div>
       <div class="cv5-phone prp6">
@@ -126,9 +118,9 @@ html,body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;backgr
           <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Open on Kaelen already back in the mines</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">The iron crank screamed. Kaelen hauled it hand over hand, each revolution driving a spike of sound through the bones behind his ears. His arms shook. The heat from the lower galleries hadn't left him.</div><div class="p6-actions"><button class="p6-btn-accept" onclick="event.stopPropagation()">Accept</button><button class="p6-btn-discuss" onclick="event.stopPropagation()">Discuss</button><div class="p6-icon-btns"><button class="p6-icon-btn" onclick="event.stopPropagation()">◉</button><button class="p6-icon-btn" onclick="event.stopPropagation()">✕</button></div></div></div></div>
           <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Collapse the repeated well scene into one beat</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">The encounter at the well still burned in Kaelen's mind — Elara's mask slipping, Silas Vane's cold promise of a 'hole' in the mines. He had tried to wash the dark away, but the water had only made the blue light under his skin pulse brighter.</div><div class="p6-actions"><button class="p6-btn-accept" onclick="event.stopPropagation()">Accept</button><button class="p6-btn-discuss" onclick="event.stopPropagation()">Discuss</button><div class="p6-icon-btns"><button class="p6-icon-btn" onclick="event.stopPropagation()">◉</button><button class="p6-icon-btn" onclick="event.stopPropagation()">✕</button></div></div></div></div>
           <div class="p6-sec-hdr" style="margin-top:20px"><span class="p6-sec-title">QUICK TIPS (3)</span><div class="p6-sec-line"></div></div>
-          <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Give Kaelen and Elara one shared moment before the reveal</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">The emotional payoff for Kaelen and Elara's relationship feels slightly rushed in the chaos of the town collapse. → Add a brief moment of shared realization between Kaelen and Elara just before Silas Vane is revealed.</div><div class="p6-actions"><button class="p6-btn-accept" onclick="event.stopPropagation()">Accept</button><button class="p6-btn-discuss" onclick="event.stopPropagation()">Discuss</button><div class="p6-icon-btns"><button class="p6-icon-btn" onclick="event.stopPropagation()">◉</button><button class="p6-icon-btn" onclick="event.stopPropagation()">✕</button></div></div></div></div>
-          <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Turn their separate realisations into live dialogue</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">Kaelen and Elara process the revelation of the well's connection to the entity through separate internal realizations rather than a shared discovery. → Convert the internal processing of the blue light into a tense dialogue between Kaelen and Elara.</div><div class="p6-actions"><button class="p6-btn-accept" onclick="event.stopPropagation()">Accept</button><button class="p6-btn-discuss" onclick="event.stopPropagation()">Discuss</button><div class="p6-icon-btns"><button class="p6-icon-btn" onclick="event.stopPropagation()">◉</button><button class="p6-icon-btn" onclick="event.stopPropagation()">✕</button></div></div></div></div>
-          <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Anchor the vision to a personal memory</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">The vision scene in the mine focuses heavily on atmosphere but lacks personal stakes or character development. → Incorporate Kaelen's internal struggle or a specific realization about his past during the vision.</div><div class="p6-actions"><button class="p6-btn-accept" onclick="event.stopPropagation()">Accept</button><button class="p6-btn-discuss" onclick="event.stopPropagation()">Discuss</button><div class="p6-icon-btns"><button class="p6-icon-btn" onclick="event.stopPropagation()">◉</button><button class="p6-icon-btn" onclick="event.stopPropagation()">✕</button></div></div></div></div>
+          <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Give Kaelen and Elara one shared moment before the reveal</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">The emotional payoff for Kaelen and Elara's relationship feels slightly rushed in the chaos of the town collapse. Add a brief moment of shared realization between Kaelen and Elara just before Silas Vane is revealed.</div></div></div>
+          <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Turn their separate realisations into live dialogue</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">Kaelen and Elara process the revelation of the well's connection to the entity through separate internal realizations. Convert this into a tense dialogue between them.</div></div></div>
+          <div class="p6-dark-card" onclick="this.classList.toggle('open')"><div class="p6-dark-head"><div class="p6-card-title">Anchor the vision to a personal memory</div><span class="p6-chev">⌄</span></div><div class="p6-dark-body"><div class="p6-card-text">The vision scene lacks personal stakes. Incorporate Kaelen's internal struggle or a specific realization about his past during the vision.</div></div></div>
         </div>
       </div>
     </div>
